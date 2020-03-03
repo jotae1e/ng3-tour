@@ -33,17 +33,17 @@ export interface CtrlBtnsI {
 
 export const defaultCtrlBtns = {
   done: {
-   'en-EN': 'done',
+   'en-EN': 'FINALIZAR',
    'ru-RU': 'закр',
    'fr-FR': 'fini',
   },
   prev: {
-    'en-EN': 'prev',
+    'en-EN': 'ANTERIOR',
     'ru-RU': 'пред',
     'fr-FR': 'préc'
   },
   next: {
-    'en-EN': 'next',
+    'en-EN': 'SIGUIENTE',
     'ru-RU': 'след',
     'fr-FR': 'proch',
   },
