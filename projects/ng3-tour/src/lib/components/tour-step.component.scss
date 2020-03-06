@@ -27,7 +27,7 @@
         border-right: $width solid transparent;
         bottom: -$width;
         right: 45%;
-    }
+    } 
             
 }
 
@@ -73,6 +73,24 @@
     &.pos-center {
         &.animation-on .tour-step-modal {
             animation: fade .4s ease-in-out;
+        }
+    }
+
+    &.pos-center-down {
+        &.animation-on .tour-step-modal {
+            animation: fade .4s ease-in-out;
+        }
+        &.with-arrow .tour-step-modal::after {
+            @include arrow('down');
+        }
+    }
+
+    &.pos-center-top {
+        &.animation-on .tour-step-modal {
+            animation: fade .4s ease-in-out;
+        }
+        &.with-arrow .tour-step-modal::after {
+            @include arrow('top');
         }
     }
 }
