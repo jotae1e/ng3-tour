@@ -612,7 +612,7 @@
          */
         function (tour) {
             /** @type {?} */
-            var regExpr = /^top$|^down$|^left$|^right$|^center$|^right-center$|^left-center$|^right-top$|^left-top$/i;
+            var regExpr = /^top$|^down$|^left$|^right$|^center$|^right-center$|^left-center$|^right-top$|^left-top$|^center-down$|^center-top$/i;
             /** @type {?} */
             var isValid = true;
             tour.steps.forEach((/**

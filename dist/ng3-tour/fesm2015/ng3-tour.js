@@ -395,7 +395,7 @@ class TourService {
      */
     validateOptions(tour) {
         /** @type {?} */
-        const regExpr = /^top$|^down$|^left$|^right$|^center$|^right-center$|^left-center$|^right-top$|^left-top$/i;
+        const regExpr = /^top$|^down$|^left$|^right$|^center$|^right-center$|^left-center$|^right-top$|^left-top$|^center-down$|^center-top$/i;
         /** @type {?} */
         let isValid = true;
         tour.steps.forEach((/**

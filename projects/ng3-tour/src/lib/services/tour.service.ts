@@ -229,7 +229,7 @@ export class TourService {
   }
 
   private validateOptions(tour: TourI): boolean {
-    const regExpr = /^top$|^down$|^left$|^right$|^center$|^right-center$|^left-center$|^right-top$|^left-top$/i;
+    const regExpr = /^top$|^down$|^left$|^right$|^center$|^right-center$|^left-center$|^right-top$|^left-top$|^center-down$|^center-top$/i;
     let isValid = true;
     tour.steps.forEach((step: TourStepI) => {
       if (step.options && step.options.placement) {
