@@ -997,8 +997,14 @@ class TourStepComponent {
         if (/^down$/i.test(placement)) {
             this.stepModalPosition = { top: bottom + 20, left: Math.round(left - modalWidth / 2) };
         }
+        else if (/^center-down$/i.test(placement)) {
+            this.stepModalPosition = { top: bottom + 20, left: Math.round(window.innerWidth / 2 - modalWidth / 2) };
+        }
         else if (/^top$/i.test(placement)) {
             this.stepModalPosition = { top: top - this.modalHeight - 20, left: Math.round(left - modalWidth / 2) };
+        }
+        else if (/^center-top$/i.test(placement)) {
+            this.stepModalPosition = { top: top - this.modalHeight - 20, left: Math.round(window.innerWidth / 2 - modalWidth / 2) };
         }
         else if (/^left$/i.test(placement)) {
             this.stepModalPosition = { left: left - modalWidth - 20, top };
